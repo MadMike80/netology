@@ -1,5 +1,5 @@
 <?php
-    //$userNumber = $_GET['x'];
+    $userNumber = $_GET['x'];
     $userNumber = rand(0,100); 
     $number1 = 1;
     $number2 = 1;
