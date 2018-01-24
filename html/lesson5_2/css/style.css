@@ -1,0 +1,156 @@
+@font-face {
+  font-family:'Raleway';
+  src: url('../fonts/Raleway Bold.eot');
+src: url('../fonts/Raleway Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Raleway Bold.woff2') format('woff2'),
+  url('../fonts/Raleway Bold.woff') format('woff'),
+  url('../fonts/Raleway Bold.ttf') format('truetype'),
+  url('../fonts/Raleway Bold.otf') format('opentype'),
+  url('../fonts/Raleway Bold.svg#Raleway Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04B1;
+}
+
+@font-face {
+  font-family:'Raleway';
+  src: url('../fonts/Raleway Regular.eot');
+src: url('../fonts/Raleway Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Raleway Regular.woff2') format('woff2'),
+  url('../fonts/Raleway Regular.woff') format('woff'),
+  url('../fonts/Raleway Regular.ttf') format('truetype'),
+  url('../fonts/Raleway Regular.otf') format('opentype'),
+  url('../fonts/Raleway Regular.svg#Raleway Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04B1;
+}
+
+body {
+  width: 1900px;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font-size: 0;
+  position: relative;
+}
+
+.conteiner {
+  width: 1170px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-family: Raleway;
+  width: 33.3333%;
+  box-sizing: border-box;
+}
+
+.col div {
+  margin: 0px auto;
+  width: 75px;
+  height: 60px;
+  padding: 3px 0 0 3px;
+}
+
+.icon1 {
+  background: url(../img/icon-sprait-min.png) 8px 0 no-repeat;
+}
+
+.icon2 {
+  background: url(../img/icon-sprait-min.png) -98px 0 no-repeat;
+}
+
+.icon3 {
+  background: url(../img/icon-sprait-min.png) -200px 0 no-repeat;
+}
+
+.icon4 {
+  background: url(../img/icon-sprait-min.png) 8px -77px no-repeat;
+}
+
+.icon5 {
+  background: url(../img/icon-sprait-min.png) -98px -77px no-repeat;
+}
+
+.icon6 {
+  background: url(../img/icon-sprait-min.png) -200px -77px no-repeat;
+}
+
+.col h2 {
+  font-size: 14px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #2d3033;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
+.col p {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #6c7279;
+  margin: 16px 46px 0 46px;
+}
+
+.col a {
+  text-decoration: none;
+}
+
+.row1 {
+  margin-top: 120px;
+}
+
+.row2 {
+  margin-top: 70px;
+}
+
+.galery {
+  margin-top: 120px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.row-first {
+  width: 100%;
+}
+
+.row-first img {
+  width: 25%;
+  height: auto;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.row-second img {
+  width: 25%;
+  height: auto;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.row-first img:first-child {
+  border-left: 0;
+}
+
+.row-second img:first-child {
+  border-left: 0;
+}

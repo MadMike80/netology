@@ -1,0 +1,42 @@
+.calendar .calendar-days li:nth-child(7n-1),
+.calendar .calendar-days li:nth-child(7n){
+		background-color: red;
+}
+
+.block:nth-child(8)~div{
+    display: none;
+}
+
+.customed-list li{
+  list-style: none;
+  text-indent: -1em;
+}
+
+.customed-list li:nth-child(even)::before{
+  content: '@';
+  padding: 5px;
+}
+
+.customed-list li:nth-child(odd)::before{
+  content: '*';
+  padding: 5px;
+}
+
+.task3{
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.customed-list li:nth-child(2),
+.customed-list li:nth-child(2)~li{
+	padding-top: 20px;
+}
+
+.menu li{
+  margin-right: 30px;
+}
+
+.menu li:nth-last-child(n+5),
+.menu li:nth-last-child(n+5) ~ li{
+  margin-right: 10px;
+}
