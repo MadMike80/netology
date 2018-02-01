@@ -1,18 +1,18 @@
 <?php
 
 $animals = array(
-    "Eurasian" => array("Ursus arctos", "Meles meles", "Martes zibellina"),
-    "Africa" => array("Panthera leo", "Papio cynocephalus", "Camelus"),
-    "Australia" => array("Macropus", "Ornithorhynchus anatinus", "Sarcophilus laniarius"),
-    "NorthAmerica" => array("Hystrix cristata", "Mephitis", "Canis latrans"),
-    "SouthAmerica" => array("Lama", "Leopardus pardalis", "Folivora")
+    "Eurasian" => array("Ursus arctos", "Meles meles", "Martes zibellina", "Viverra lutra Linnaeus"),
+    "Africa" => array("Lycaon pictus somalicus", "Papio cynocephalus", "Camelus", "Panthera leo"),
+    "Australia" => array("Macropus", "Ornithorhynchus anatinus", "Tachyglossus aculeatus aculeatus", "Sarcophilus laniarius"),
+    "NorthAmerica" => array("Hystrix cristata", "Heloderma suspectum cinctum", "Mephitis", "Canis latrans"),
+    "SouthAmerica" => array("Lama", "Leopardus pardalis", "Puma concolor anthonyi", "Folivora")
 );
 
     $newAnimals = array();
     $firstWordInContinent = array();
 foreach($animals as $continent => $animalName) {
     foreach ($animalName as $value) {
-        if (strpos($value, ' ') !== false) {
+        if (strpos($value, ' ') !== false && substr_count($value, ' ') <= 1) {
             $newAnimals[$continent][] = $value;
             list($first, $second) = explode(' ', $value, 2);
             $firstWord[] = $first;
