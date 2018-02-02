@@ -8,6 +8,10 @@ $animals = [
     "SouthAmerica" => ["Lama", "Leopardus pardalis", "Puma concolor anthonyi", "Folivora"]
 ];
 
+$newAnimals = [];
+$firstWord = [];
+$secondWord = [];
+$firstWordInContinent = [];
 foreach($animals as $continent => $animalName) {
     foreach ($animalName as $value) {
         /*if (strpos($value, ' ') !== false && substr_count($value, ' ') <= 1)*/
@@ -24,21 +28,24 @@ foreach($animals as $continent => $animalName) {
 shuffle($firstWord);
 shuffle($secondWord);
 
+$fantasticAnimals = [];
 for ($i = 0; $i < count($firstWord); $i++) {
     $fantasticAnimals[] = $firstWord[$i] . " " . $secondWord[$i];
     echo "$fantasticAnimals[$i]</br>";
 }
 
+$newFantasticAnimals = [];
 foreach($firstWordInContinent as $nameContinent => $firstWordItem) {
     foreach ($firstWordItem as $item){
         foreach ($fantasticAnimals as $name) {
-            if (strpos($name, "$item") !== false) {
+            if (strpos($name, $item) !== false) {
                 $newFantasticAnimals[$nameContinent][] = $name;
             }
         }
     }
 }
 
+$fantasticName = [];
 foreach($newFantasticAnimals as $continentName => $nameAnimals) {
     $fantasticName = implode(', ', $nameAnimals);
     echo '<h2>' . "$continentName" . '</h2>';
