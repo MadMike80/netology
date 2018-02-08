@@ -1,0 +1,26 @@
+[{
+  "firstName": "Иван",
+  "lastName": "Иванов",
+  "address": "г.Москва, ул. Алиева,2",
+  "phoneNumber": "812 123-1234"
+}, {
+  "firstName": "Сергей",
+  "lastName": "Семёнов",
+  "address": "г.Москва, ул. Юности,9",
+  "phoneNumber": "810 132-1432"
+}, {
+  "firstName": "Андрей",
+  "lastName": "Сидоров",
+  "address": "г.Подольск, ул. Февральская,42",
+  "phoneNumber": "802 145-2934"
+}, {
+  "firstName": "Максим",
+  "lastName": "Попов",
+  "address": "г.Балашиха, ул. Полевая,14",
+  "phoneNumber": "808 248-1539"
+}, {
+  "firstName": "Денис",
+  "lastName": "Козлов",
+  "address": "г.Ногинск, ул. Рабочая,23",
+  "phoneNumber": "814 548-7162"
+}]
